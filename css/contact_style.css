@@ -1,0 +1,74 @@
+
+  /* Reset CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: row; /* Secara default, tata letak horizontal */
+  justify-content: center;
+  gap: 20px; /* Jarak antara kartu-kartu */
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Lebar kartu */
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.icons{
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+/* Media Query untuk layar yang lebih kecil dari 768px (tampilan mobile) */
+@media (max-width: 768px) {
+  .contact-cards {
+    width: 100%;
+    flex-direction: column; /* Tampilkan kartu-kartu secara vertikal */
+    align-items: center; /* Pusatkan kartu-kartu */
+  }
+
+  .card {
+    width: 100%; /* Kartu mengambil lebar penuh pada layar mobile */
+    max-width:400px;
+  }
+}
